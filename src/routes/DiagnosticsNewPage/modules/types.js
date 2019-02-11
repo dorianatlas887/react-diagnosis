@@ -1,0 +1,15 @@
+export const INIT_DIAGNOSIS = 'INIT_DIAGNOSIS';
+export const NEXT_STEP = 'NEXT_STEP';
+export const PREV_STEP = 'PREV_STEP';
+export const ADD_PRESCRIPTION = 'ADD_PRESCRIPTION';
+export const DELETE_PRESCRIPTION = 'DELETE_PRESCRIPTION';
+export const SET_INTENSITY = 'SET_INTENSITY';
+export const GET_NODES = 'GET_NODES';
+export const GET_TREES = 'GET_TREES';
+export const INIT_STATUS = 'INIT_STATUS';
+export const CREATE_PRESCRIPTION = 'CREATE_PRESCRIPTION';
+export const ADD_INTENSITY = 'ADD_INTENSITY';
+export const UPLOAD_PHOTO = 'UPLOAD_PHOTO';
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const ADD_CONDITION = 'ADD_CONDITION';
+export const NEXT_QUESTION = 'NEXT_QUESTION';

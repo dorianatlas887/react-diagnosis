@@ -1,0 +1,2 @@
+export const FETCH_PATIENTS = 'FETCH_PATIENTS';
+export const INIT_PATIENTS = 'INIT_PATIENTS';

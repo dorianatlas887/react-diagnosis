@@ -1,0 +1,23 @@
+[
+  {
+    "alias": "M",
+    "esTitle": "Millones",
+    "enTitle": "Millions",
+    "relation": 1,
+    "order": 3
+  },
+  {
+    "alias": "T",
+    "esTitle": "Miles",
+    "enTitle": "Thousands",
+    "relation": 0.001,
+    "order": 2
+  },
+  {
+    "alias": "U",
+    "esTitle": "Unidades",
+    "enTitle": "Units",
+    "relation": 0.000001,
+    "order": 1
+  }
+]

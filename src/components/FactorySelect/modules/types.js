@@ -1,0 +1,1 @@
+export const GET_FACTORIES = 'GET_FACTORIES';

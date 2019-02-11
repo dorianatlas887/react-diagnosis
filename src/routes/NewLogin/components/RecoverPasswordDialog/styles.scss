@@ -1,0 +1,58 @@
+@import 'src/styles/colors';
+
+.recover-password-main-dialog {
+  .btn-close {
+    cursor: pointer;
+    float: right;
+    padding-top: .5rem;
+  }
+
+  .main-content-wrapper {
+    padding: 0 2.4rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: $black;
+    font-weight: 100;
+
+    .email-input-wrapper {
+      overflow: hidden;
+
+      label {
+        font-family: 'RobotoBold';
+        color: $black;
+      }
+    }
+
+    .recover-email-msg-wrapper {
+      line-height: 2.2rem;
+
+      .recover-email-msg-txt {
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .recover-email-help-txt {
+    padding-top: 2.5rem;
+    color: $black;
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+  .recover-email-help-number {
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: .6rem;
+
+    a,
+    a:visited {
+      color: $primary;
+    }
+  }
+
+  .btn-action {
+    text-transform: uppercase;
+    margin: 1.0rem 0 0;
+  }
+}

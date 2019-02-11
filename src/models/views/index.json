@@ -1,0 +1,305 @@
+{
+  "viewId": "2",
+  "name": "Vista General",
+  "epigraph": [
+    {
+      "name": "Balance",
+      "alias": "BAL",
+      "order": 1,
+      "type": {
+        "itemType": "formula",
+        "formula": "= (@ANC * 2) / (@AC / 3)",
+        "value": null
+      },
+      "isVisible": true,
+      "isComparable": true,
+      "items": [
+        {
+          "name": "Activo No Corriente",
+          "alias": "ANC",
+          "order": 1,
+          "type": {
+            "itemType": "input",
+            "formula": null,
+            "value": null
+          },
+          "isVisible": true,
+          "isComparable": false,
+          "items": [
+            {
+              "name": "Inversiones Financieras",
+              "alias": "ANCIF",
+              "order": 1,
+              "type": {
+                "itemType": "formula",
+                "formula": "= @ANCIFT + (@ANCIFIMT / 2)",
+                "value": null
+              },
+              "isVisible": true,
+              "isComparable": true,
+              "items": [
+                {
+                  "name": "Terrenos",
+                  "alias": "ANCIFT",
+                  "order": 1,
+                  "type": {
+                    "itemType": "input",
+                    "formula": null,
+                    "value": null
+                  },
+                  "isVisible": false,
+                  "isComparable": true,
+                  "items": null
+                },
+                {
+                  "name": "Inmuebles, maquinaria y equipo",
+                  "alias": "ANCIFIMT",
+                  "order": 2,
+                  "type": {
+                    "itemType": "input",
+                    "formula": null,
+                    "value": null
+                  },
+                  "isVisible": false,
+                  "isComparable": true,
+                  "items": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Activo Corriente",
+          "alias": "AC",
+          "order": 2,
+          "type": {
+            "itemType": "input",
+            "formula": null,
+            "value": null
+          },
+          "isVisible": false,
+          "isComparable": false,
+          "items": null
+        }
+      ]
+    },
+    {
+      "name": "Perdidas y Ganancias",
+      "alias": "PG",
+      "order": 2,
+      "type": {
+        "itemType": "formula",
+        "formula": "= @IE + 2 * (@IEVI - @IEVIVM)",
+        "value": null
+      },
+      "isVisible": true,
+      "isComparable": true,
+      "items": [
+        {
+          "name": "Ingresos de Explotación",
+          "alias": "IE",
+          "order": 1,
+          "type": {
+            "itemType": "input",
+            "formula": null,
+            "value": null
+          },
+          "isVisible": true,
+          "isComparable": false,
+          "items": [
+            {
+              "name": "Ventas e Ingresos",
+              "alias": "IEVI",
+              "order": 1,
+              "type": {
+                "itemType": "formula",
+                "formula": "= (@IEVIPS - @IEVIVM) / 2",
+                "value": null
+              },
+              "isVisible": true,
+              "isComparable": true,
+              "items": [
+                {
+                  "name": "Venta de mercaderías",
+                  "alias": "IEVIVM",
+                  "order": 1,
+                  "type": {
+                    "itemType": "input",
+                    "formula": null,
+                    "value": null
+                  },
+                  "isVisible": false,
+                  "isComparable": true,
+                  "items": null
+                },
+                {
+                  "name": "Prestación de servicios",
+                  "alias": "IEVIPS",
+                  "order": 2,
+                  "type": {
+                    "itemType": "input",
+                    "formula": null,
+                    "value": null
+                  },
+                  "isVisible": false,
+                  "isComparable": true,
+                  "items": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "eeff": [
+    {
+      "name": "Estado Financiero Segundo Trimestre",
+      "alias": "EEFFPT00002",
+      "formula": "= (@BAL - @PG) * 3",
+      "order": 2,
+      "impDate": "2016-12-31T00:00:00.000Z",
+      "units": 5,
+      "consolidated": true,
+      "type": "typeExample",
+      "closeDate": "2016-12-31T00:00:00.000Z",
+      "currency": "EUR",
+      "infoSource": "infoSource",
+      "status": "Closed",
+      "periodicity": "QUARTERLY",
+      "standar": "standar",
+      "audits": "audits",
+      "values": [
+        {
+          "value": "= (@ANC * 2) / (@AC / 3)",
+          "calcValue": 8533,
+          "name": "BAL"
+        },
+        {
+          "value": "10536",
+          "calcValue": 10536,
+          "name": "ANC"
+        },
+        {
+          "value": "= @ANCIFT + (@ANCIFIMT / 2)",
+          "calcValue": 30312,
+          "name": "ANCIF"
+        },
+        {
+          "value": "= 10000 * 0.35",
+          "calcValue": 3500,
+          "name": "ANCIFT"
+        },
+        {
+          "value": "53624",
+          "calcValue": 53624,
+          "name": "ANCIFIMT"
+        },
+        {
+          "value": "25600",
+          "calcValue": 25600,
+          "name": "AC"
+        },
+        {
+          "value": "= @IE + 2 * (@IEVI - @IEVIVM)",
+          "calcValue": 58340,
+          "name": "PG"
+        },
+        {
+          "value": "27500",
+          "calcValue": 27500,
+          "name": "IE"
+        },
+        {
+          "value": "= (@IEVIPS - @IEVIVM) / 2",
+          "calcValue": 25080,
+          "name": "IEVI"
+        },
+        {
+          "value": "= 42000 * 0.23",
+          "calcValue": 9660,
+          "name": "IEVIVM"
+        },
+        {
+          "value": "59820",
+          "calcValue": 59820,
+          "name": "IEVIPS"
+        }
+      ]
+    },
+    {
+      "name": "Estado Financiero Primer Trimestre",
+      "alias": "EEFFPT00001",
+      "formula": "= (@BAL - @PG) * 3",
+      "order": 1,
+      "impDate": "2016-12-31T00:00:00.000Z",
+      "units": 5,
+      "consolidated": true,
+      "type": "type",
+      "closeDate": "2016-12-31T00:00:00.000Z",
+      "currency": "currency",
+      "infoSource": "infoSource",
+      "status": "Closed",
+      "periodicity": "periodicity",
+      "standar": "standar",
+      "audits": "audits",
+      "values": [
+        {
+          "value": "= (@ANC * 2) / (@AC / 3)",
+          "calcValue": null,
+          "name": "BAL"
+        },
+        {
+          "value": "",
+          "calcValue": null,
+          "name": "ANC"
+        },
+        {
+          "value": "= @ANCIFT + (@ANCIFIMT / 2)",
+          "calcValue": null,
+          "name": "ANCIF"
+        },
+        {
+          "value": "",
+          "calcValue": null,
+          "name": "ANCIFT"
+        },
+        {
+          "value": "",
+          "calcValue": null,
+          "name": "ANCIFIMT"
+        },
+        {
+          "value": "",
+          "calcValue": null,
+          "name": "AC"
+        },
+        {
+          "value": "= @IE + 2 * (@IEVI - @IEVIVM)",
+          "calcValue": null,
+          "name": "PG"
+        },
+        {
+          "value": "",
+          "calcValue": null,
+          "name": "IE"
+        },
+        {
+          "value": "",
+          "calcValue": null,
+          "name": "IEVI"
+        },
+        {
+          "value": "",
+          "calcValue": null,
+          "name": "IEVIVM"
+        },
+        {
+          "value": "",
+          "calcValue": null,
+          "name": "IEVIPS"
+        }
+      ]
+    }
+  ]
+}

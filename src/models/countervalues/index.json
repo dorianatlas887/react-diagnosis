@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2018-09-21",
+    "symbol": "EUR",
+    "curr": "EUR",
+    "currName": "Euro",
+    "value": 1
+  },
+  {
+    "date": "2018-09-21",
+    "symbol": "USD",
+    "curr": "USD",
+    "currName": "United States Dollar",
+    "value": 1.18
+  }
+]
